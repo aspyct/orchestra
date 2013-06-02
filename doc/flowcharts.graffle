@@ -26,7 +26,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2013-06-02 17:24:25 +0000</string>
+	<string>2013-06-02 20:41:07 +0000</string>
 	<key>Modifier</key>
 	<string>aspyct</string>
 	<key>NotesVisible</key>
@@ -1903,7 +1903,7 @@ scan rate}</string>
 			<key>BackgroundGraphic</key>
 			<dict>
 				<key>Bounds</key>
-				<string>{{0, 0}, {1103, 727}}</string>
+				<string>{{0, 0}, {559, 783}}</string>
 				<key>Class</key>
 				<string>SolidGraphic</string>
 				<key>ID</key>
@@ -1926,8 +1926,6 @@ scan rate}</string>
 			<integer>0</integer>
 			<key>CanvasOrigin</key>
 			<string>{0, 0}</string>
-			<key>CanvasSize</key>
-			<string>{1103, 727}</string>
 			<key>ColumnAlign</key>
 			<integer>1</integer>
 			<key>ColumnSpacing</key>
@@ -1938,7 +1936,7 @@ scan rate}</string>
 			<array>
 				<dict>
 					<key>Bounds</key>
-					<string>{{228.9426914399823, 107.84553909301758}, {30, 24}}</string>
+					<string>{{60.393668605559469, 135.90494637964139}, {30, 24}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2016,9 +2014,9 @@ scan rate}</string>
 					<real>-1</real>
 					<key>Points</key>
 					<array>
-						<string>{264, 119.84553909301758}</string>
-						<string>{210, 446}</string>
-						<string>{266.00001144409185, 692.77110290527344}</string>
+						<string>{95.450977165577171, 147.90494637964139}</string>
+						<string>{41.4509771655772, 474.0594072866237}</string>
+						<string>{97.450988609668997, 720.83051019189691}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2044,7 +2042,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{298, 161.60442920119294}, {26, 24}}</string>
+					<string>{{129.45097716557717, 189.66383648781675}, {26, 24}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2122,8 +2120,8 @@ scan rate}</string>
 					<real>-1</real>
 					<key>Points</key>
 					<array>
-						<string>{311, 144.34553909301758}</string>
-						<string>{311, 216}</string>
+						<string>{142.45097716557717, 172.40494637964139}</string>
+						<string>{142.45097716557717, 244.05940728662381}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2149,7 +2147,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{264, 95.345539093017578}, {94, 49}}</string>
+					<string>{{95.450977165577171, 123.40494637964139}, {94, 49}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -2198,8 +2196,8 @@ scan rate}</string>
 					<real>-1</real>
 					<key>Points</key>
 					<array>
-						<string>{493.95238304138184, 621.83683776855469}</string>
-						<string>{356.00001144409174, 692.77110290527344}</string>
+						<string>{325.40336020695901, 649.89624505517816}</string>
+						<string>{187.45098860966894, 720.83051019189691}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2243,8 +2241,8 @@ scan rate}</string>
 					<real>93</real>
 					<key>Points</key>
 					<array>
-						<string>{493.95238304138184, 259.599609375}</string>
-						<string>{493.95238304138184, 585.83683776855469}</string>
+						<string>{325.40336020695901, 287.65901666162381}</string>
+						<string>{325.40336020695901, 613.89624505517816}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2270,7 +2268,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{448.95238304138184, 223.599609375}, {90, 36}}</string>
+					<string>{{280.40336020695901, 251.65901666162384}, {90, 36}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -2318,8 +2316,8 @@ scan rate}</string>
 					<real>-1</real>
 					<key>Points</key>
 					<array>
-						<string>{311.00000000000006, 621.83683776855469}</string>
-						<string>{311.0000114440918, 674.77110290527344}</string>
+						<string>{142.45097716557723, 649.89624505517816}</string>
+						<string>{142.45098860966897, 702.83051019189691}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2345,7 +2343,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{296.8028678894043, 537.08213520050049}, {30, 24}}</string>
+					<string>{{128.25384505498147, 565.14154248712418}, {30, 24}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2421,8 +2419,8 @@ scan rate}</string>
 					<real>20.192193984985352</real>
 					<key>Points</key>
 					<array>
-						<string>{311.8028678894043, 521.65245056152344}</string>
-						<string>{311.00000000000006, 585.83683776855469}</string>
+						<string>{143.25384505498147, 549.71185784814713}</string>
+						<string>{142.45097716557723, 613.89624505517816}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2446,7 +2444,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{296, 412.57661088771056}, {30, 24}}</string>
+					<string>{{127.45097716557717, 440.63601817433425}, {30, 24}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2506,7 +2504,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{266.00000000000006, 585.83683776855469}, {90, 36}}</string>
+					<string>{{97.450977165577228, 613.89624505517816}, {90, 36}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -2537,7 +2535,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{225.23529901139344, 485.15245056152344}, {26, 24}}</string>
+					<string>{{56.686276176970637, 513.21185784814713}, {26, 24}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2615,9 +2613,9 @@ scan rate}</string>
 					<real>-1</real>
 					<key>Points</key>
 					<array>
-						<string>{264.8028678894043, 497.15245056152344}</string>
-						<string>{209.80392549185521, 569.60785378863488}</string>
-						<string>{266.00001144409185, 692.77110290527344}</string>
+						<string>{96.253845054981468, 525.21185784814713}</string>
+						<string>{41.25490265743241, 597.66726107525835}</string>
+						<string>{97.450988609668997, 720.83051019189691}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2659,8 +2657,8 @@ scan rate}</string>
 					<real>31.976938247680664</real>
 					<key>Points</key>
 					<array>
-						<string>{311, 384.89857419795226}</string>
-						<string>{311.8028678894043, 472.65245056152344}</string>
+						<string>{142.45097716557717, 412.95798148457595}</string>
+						<string>{143.25384505498147, 500.71185784814713}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2684,7 +2682,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{264.8028678894043, 472.65245056152344}, {94, 49}}</string>
+					<string>{{96.253845054981468, 500.71185784814713}, {94, 49}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -2715,7 +2713,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{391.88927180681458, 348.39857419795226}, {26, 24}}</string>
+					<string>{{223.34024897239175, 376.45798148457595}, {26, 24}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2793,8 +2791,8 @@ scan rate}</string>
 					<real>-1</real>
 					<key>Points</key>
 					<array>
-						<string>{358, 360.39857419795226}</string>
-						<string>{493.95238304138184, 585.83683776855469}</string>
+						<string>{189.45097716557717, 388.45798148457595}</string>
+						<string>{325.40336020695901, 613.89624505517816}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2820,7 +2818,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{296, 281.46107741050463}, {30, 24}}</string>
+					<string>{{127.45097716557717, 309.81976784132235}, {30, 24}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2880,7 +2878,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{388.31065872021003, 229.02362351346528}, {26, 24}}</string>
+					<string>{{219.7616358857872, 257.08303080008909}, {26, 24}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>FitText</key>
@@ -2950,8 +2948,8 @@ scan rate}</string>
 					<integer>26</integer>
 					<key>Points</key>
 					<array>
-						<string>{311, 265}</string>
-						<string>{311, 335.89857419795226}</string>
+						<string>{142.45097716557717, 293.5594072821728}</string>
+						<string>{142.45097716557717, 363.95798148457595}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2987,8 +2985,8 @@ scan rate}</string>
 					<integer>25</integer>
 					<key>Points</key>
 					<array>
-						<string>{311.8028564453125, 52.110099792480469}</string>
-						<string>{311, 95.345539093017578}</string>
+						<string>{143.24455050810042, 80.669420892474477}</string>
+						<string>{142.45097716557717, 123.40494637964139}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -3022,8 +3020,8 @@ scan rate}</string>
 					<integer>22</integer>
 					<key>Points</key>
 					<array>
-						<string>{358, 240.5}</string>
-						<string>{448.95238304138184, 241.599609375}</string>
+						<string>{189.45097716557717, 268.55940728662381}</string>
+						<string>{280.40336020695901, 269.65901666162381}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -3047,7 +3045,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{448.95238304138184, 585.83683776855469}, {90, 36}}</string>
+					<string>{{280.40336020695901, 613.89624505517816}, {90, 36}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -3078,7 +3076,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{266.0000114440918, 674.77110290527344}, {90, 36}}</string>
+					<string>{{97.450988609668968, 702.83051019189691}, {90, 36}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -3109,7 +3107,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{264, 335.89857419795226}, {94, 49}}</string>
+					<string>{{95.450977165577171, 363.95798148457595}, {94, 49}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -3140,7 +3138,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{264, 216}, {94, 49}}</string>
+					<string>{{95.450977165577171, 244.05940728662384}, {94, 49}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -3171,7 +3169,7 @@ scan rate}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{266.8028564453125, 16.110099792480469}, {90, 36}}</string>
+					<string>{{98.253833610889671, 44.169507079104257}, {90, 36}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -3204,7 +3202,7 @@ scan rate}</string>
 			<key>GridInfo</key>
 			<dict/>
 			<key>HPages</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>KeepToScale</key>
 			<false/>
 			<key>Layers</key>
@@ -3236,7 +3234,7 @@ scan rate}</string>
 				<real>0.0</real>
 			</dict>
 			<key>Orientation</key>
-			<integer>2</integer>
+			<integer>0</integer>
 			<key>PrintOnePage</key>
 			<false/>
 			<key>RowAlign</key>
@@ -4360,7 +4358,7 @@ scan rate}</string>
 		<key>SidebarWidth</key>
 		<integer>163</integer>
 		<key>VisibleRegion</key>
-		<string>{{9.8039217519558512, 41.17647135821457}, {1080.3921770655347, 622.54903124919645}}</string>
+		<string>{{-261, 0}, {1080.3921770655347, 622.54903124919656}}</string>
 		<key>Zoom</key>
 		<real>1.0199999809265137</real>
 		<key>ZoomValues</key>

@@ -45,14 +45,13 @@ public class MaestroTest {
 		maestro.powerSwitchedOff();
 		
 		verify(musicManager).stopPlayback();
-		verifyZeroInteractions(powerManager);
 	}
 	
 	@Test
 	public void keysPluggedInShouldPowerOn() {
 		maestro.keysPluggedIn();
 		
-		verify(powerManager).switchOn();
+		verify(powerManager).powerOn();
 	}
 
 	@Test
@@ -64,7 +63,7 @@ public class MaestroTest {
 		
 		verify(bluetoothMonitor).isAnyDevicePresent();
 		verify(musicManager).isMusicPlaying();
-		verify(powerManager).switchOff();
+		verify(powerManager).powerOff();
 	}
 
 	@Test
@@ -106,7 +105,7 @@ public class MaestroTest {
 		
 		verify(bluetoothMonitor).isAnyDevicePresent();
 		verify(keysMonitor).areKeysPresent();
-		verify(powerManager).switchOff();
+		verify(powerManager).powerOff();
 	}
 	
 	@Test
@@ -164,6 +163,39 @@ public class MaestroTest {
 		verify(timeTeller).isNight();
 		verify(musicManager).fadeOut();
 		verifyZeroInteractions(powerManager);
+	}
+	
+	@Test
+	public void bluetoothLeaveShouldNotFadeMusicIfMusicIsPlayingAndItsDaytime() {
+		bluetoothIsNotPresent();
+		keysAreNotPresent();
+		musicIsPlaying();
+		itsDaytime();
+		
+		maestro.bluetoothDeviceLeaves(new BluetoothDevice());
+		
+		verify(bluetoothMonitor).isAnyDevicePresent();
+		verify(keysMonitor).areKeysPresent();
+		verify(musicManager).isMusicPlaying();
+		verify(timeTeller).isNight();
+		verifyZeroInteractions(powerManager);
+		verify(musicManager, never()).fadeOut();
+	}
+	
+	@Test
+	public void musicStartsShouldPowerOn() {
+		maestro.musicStartedPlaying();
+		
+		verify(powerManager).powerOn();
+	}
+	
+	@Test
+	public void musicStopsShouldPowerOffIfBluetoothNotPresent() {
+		bluetoothIsNotPresent();
+		
+		maestro.musicStoppedPlaying();
+		
+		verify(powerManager).powerOff();
 	}
 	
 	private void itsNight() {

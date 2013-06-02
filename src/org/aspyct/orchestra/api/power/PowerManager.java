@@ -1,8 +1,8 @@
 package org.aspyct.orchestra.api.power;
 
 public interface PowerManager {
-	void switchOn();
-	void switchOff();
+	void powerOn();
+	void powerOff();
 	
 	void addPowerListener(PowerListener listener);
 	void removePowerListener(PowerListener listener);
