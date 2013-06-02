@@ -20,49 +20,65 @@ public class Maestro implements BluetoothListener, PowerListener, KeysListener, 
 	
 	@Override
 	public void bluetoothDeviceArrives(BluetoothDevice device) {
-		// TODO Auto-generated method stub
+		bluetoothMonitor.decreaseBluetoothScanRate();
 		
+		if (keysMonitor.areKeysPresent() && timeTeller.isMorning()) {
+			openReminders();
+		}
+	}
+
+	private void openReminders() {
+		// nothing to do
 	}
 
 	@Override
 	public void bluetoothDeviceLeaves(BluetoothDevice device) {
-		// TODO Auto-generated method stub
-		
+		if (!bluetoothMonitor.isAnyDevicePresent()) {
+			if (!keysMonitor.areKeysPresent()) {
+				bluetoothMonitor.increaseBluetoothScanRate();
+				powerManager.powerOff();
+			}
+			else if (!musicManager.isMusicPlaying()) {
+				powerManager.powerOff();
+			}
+			else if (timeTeller.isNight()) {
+				musicManager.fadeOut();
+			}
+		}
 	}
 
 	@Override
 	public void keysPluggedIn() {
-		// TODO Auto-generated method stub
-		
+		powerManager.powerOn();
 	}
 
 	@Override
 	public void keysUnplugged() {
-		// TODO Auto-generated method stub
-		
+		if (!(bluetoothMonitor.isAnyDevicePresent() || musicManager.isMusicPlaying())) {
+			powerManager.powerOff();
+		}
 	}
 
 	@Override
 	public void powerSwitchedOn() {
-		// TODO Auto-generated method stub
-		
+		// nothing to do
 	}
 
 	@Override
 	public void powerSwitchedOff() {
-		// TODO Auto-generated method stub
-		
+		musicManager.stopPlayback();
 	}
 
 	@Override
 	public void musicStartedPlaying() {
-		// TODO Auto-generated method stub
-		
+		powerManager.powerOn();
 	}
 
 	@Override
 	public void musicStoppedPlaying() {
-		// TODO Auto-generated method stub		
+		if (!bluetoothMonitor.isAnyDevicePresent()) {
+			powerManager.powerOff();
+		}
 	}
 
 	public TimeTeller getTimeTeller() {

@@ -92,7 +92,6 @@ public class MaestroTest {
 		
 		maestro.bluetoothDeviceArrives(new BluetoothDevice());
 		
-		verify(bluetoothMonitor).isAnyDevicePresent();
 		verify(bluetoothMonitor).decreaseBluetoothScanRate();
 	}
 	
@@ -168,7 +167,7 @@ public class MaestroTest {
 	@Test
 	public void bluetoothLeaveShouldNotFadeMusicIfMusicIsPlayingAndItsDaytime() {
 		bluetoothIsNotPresent();
-		keysAreNotPresent();
+		keysArePresent();
 		musicIsPlaying();
 		itsDaytime();
 		
