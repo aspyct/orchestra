@@ -1,7 +1,7 @@
 package org.aspyct.orchestra.api.timetell;
 
 public interface TimeTeller {
-	boolean isDayTime();
+	boolean isDaytime();
 	boolean isMorning();
-	boolean isEvening();
+	boolean isNight();
 }

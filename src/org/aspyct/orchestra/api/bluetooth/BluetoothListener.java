@@ -1,6 +1,6 @@
 package org.aspyct.orchestra.api.bluetooth;
 
 public interface BluetoothListener {
-	void deviceArrives(BluetoothDevice device);
-	void deviceLeaves(BluetoothDevice device);
+	void bluetoothDeviceArrives(BluetoothDevice device);
+	void bluetoothDeviceLeaves(BluetoothDevice device);
 }
