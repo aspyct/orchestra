@@ -8,6 +8,7 @@ import org.aspyct.orchestra.api.keys.KeysMonitor;
 import org.aspyct.orchestra.api.music.MusicManager;
 import org.aspyct.orchestra.api.power.PowerManager;
 import org.aspyct.orchestra.api.timetell.TimeTeller;
+import org.aspyct.orchestra.maestro.Maestro;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -195,14 +196,6 @@ public class MaestroTest {
 
 	private void bluetoothIsPresent() {
 		when(bluetoothMonitor.isAnyDevicePresent()).thenReturn(true);
-	}
-
-	private void powerIsOff() {
-		when(powerManager.isPowerOn()).thenReturn(false);
-	}
-
-	private void powerIsOn() {
-		when(powerManager.isPowerOn()).thenReturn(true);
 	}
 
 	private void musicIsPlaying() {
