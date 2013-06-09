@@ -77,7 +77,7 @@ public class Maestro implements BluetoothListener, PowerListener, KeysListener, 
 
 	@Override
 	public void musicStoppedPlaying() {
-		if (!bluetoothMonitor.isAnyDevicePresent()) {
+		if (!bluetoothMonitor.isAnyDevicePresent() && timeTeller.isNight()) {
 			powerManager.powerOff();
 		}
 	}

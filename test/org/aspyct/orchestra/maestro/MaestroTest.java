@@ -189,12 +189,38 @@ public class MaestroTest {
 	}
 	
 	@Test
-	public void musicStopsShouldPowerOffIfBluetoothNotPresent() {
+	public void musicStopsShouldPowerOffIfBluetoothNotPresentAndItsNight() {
 		bluetoothIsNotPresent();
+		itsNight();
 		
 		maestro.musicStoppedPlaying();
 		
 		verify(powerManager).powerOff();
+		verify(bluetoothMonitor).isAnyDevicePresent();
+		verify(timeTeller).isNight();
+	}
+	
+	@Test
+	public void musicStopsShouldNotPowerOffIfItsNotNight() {
+		bluetoothIsNotPresent();
+		itsDaytime();
+		
+		maestro.musicStoppedPlaying();
+		
+		verify(powerManager, never()).powerOff();
+		verify(bluetoothMonitor).isAnyDevicePresent();
+		verify(timeTeller).isNight();
+	}
+	
+	@Test
+	public void musicStopsShouldNotPowerOffIfBluetoothIsPresent() {
+		bluetoothIsPresent();
+		
+		maestro.musicStoppedPlaying();
+		
+		verify(powerManager, never()).powerOff();
+		verify(bluetoothMonitor).isAnyDevicePresent();
+		verify(timeTeller, never()).isNight();
 	}
 	
 	private void itsNight() {
