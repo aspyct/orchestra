@@ -7,6 +7,14 @@ public class BluetoothDevice implements Comparable<BluetoothDevice> {
 	private String name;
 	private Date lastSeen;
 
+	public BluetoothDevice() {
+	}
+	
+	public BluetoothDevice(String macAddr) {
+		super();
+		this.macAddr = macAddr;
+	}
+
 	public String getMacAddr() {
 		return macAddr;
 	}
